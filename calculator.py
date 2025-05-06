@@ -18,5 +18,9 @@ def input_a():
 def input_b():
     return float(input("Введите число B: "))
 
+# Новая функция для этой ветки
+def add(a, b):
+    return a + b
+
 if __name__ == "__main__":
     menu()
