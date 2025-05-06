@@ -10,5 +10,9 @@ def menu():
 0. Выход
 """)
 
+#Новая функция для этой ветки:
+def input_b():
+    return float(input("Введите число B: "))
+
 if __name__ == "__main__":
     menu()
