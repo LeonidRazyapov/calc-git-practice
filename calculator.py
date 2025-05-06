@@ -26,5 +26,9 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
+# Новая функция для этой ветки:
+def multiply(a, b):
+    return a * b
+
 if __name__ == "__main__":
     menu()
