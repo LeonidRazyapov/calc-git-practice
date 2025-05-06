@@ -37,4 +37,35 @@ def divide(a, b):
     return a / b
 
 if __name__ == "__main__":
-    menu()
+    a, b = None, None  # Инициализация переменных
+
+    while True:
+        menu()
+        choice = input("Ваш выбор: ")  # Ждём ввода пользователя
+
+        if choice == "0":
+            print("Выход из программы.")
+            break
+
+        elif choice == "1":
+            a = input_a()
+
+        elif choice == "2":
+            b = input_b()
+
+        elif choice in ("3", "4", "5", "6"):
+            if a is None or b is None:
+                print("Ошибка: сначала введите A и B!")
+                continue
+
+            if choice == "3":
+                print(f"Результат: {add(a, b)}")
+            elif choice == "4":
+                print(f"Результат: {subtract(a, b)}")
+            elif choice == "5":
+                print(f"Результат: {multiply(a, b)}")
+            elif choice == "6":
+                print(f"Результат: {divide(a, b)}")
+
+        else:
+            print("Неверный ввод! Попробуйте снова.")
