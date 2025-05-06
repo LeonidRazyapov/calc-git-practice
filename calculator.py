@@ -10,5 +10,9 @@ def menu():
 0. Выход
 """)
 
+# Новая функция для этой ветки:
+def multiply(a, b):
+    return a * b
+
 if __name__ == "__main__":
     menu()
