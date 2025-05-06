@@ -30,5 +30,11 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
+# Новая функция для этой ветки:
+def divide(a, b):
+    if b == 0:
+        return "Ошибка: деление на ноль"
+    return a / b
+
 if __name__ == "__main__":
     menu()
